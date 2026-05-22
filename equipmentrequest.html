@@ -4,134 +4,7 @@
 <head>
     <title>Equipment Request - Ruble Sales and Service</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: white;
-        }
-
-        header {
-            background-color: #2e8b57;
-            padding: 15px 30px;
-            display: flex;
-            align-items: center;
-        }
-
-        .logo {
-            width: 220px;
-            height: auto;
-        }
-
-        .header-text {
-            color: white;
-            margin-left: 25px;
-        }
-
-        .header-text h1 {
-            margin: 0;
-            font-size: 42px;
-        }
-
-        nav {
-            background-color: #3cb371;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #d1fae5;
-        }
-
-        .dropdown {
-            display: inline-block;
-            position: relative;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #3cb371;
-            min-width: 220px;
-            z-index: 1;
-            border-radius: 0 0 8px 8px;
-        }
-
-        .dropdown-content a {
-            display: block;
-            margin: 0;
-            padding: 12px;
-            text-align: left;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .content-container {
-            padding: 40px;
-            max-width: 700px;
-            margin: auto;
-        }
-
-        h2 {
-            color: #2e8b57;
-            text-align: center;
-            font-size: 34px;
-        }
-
-        form {
-            background-color: #f0fff4;
-            border: 2px solid #3cb371;
-            border-radius: 10px;
-            padding: 25px;
-        }
-
-        label {
-            display: block;
-            font-weight: bold;
-            margin-top: 15px;
-            color: #2e8b57;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            margin-top: 6px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 16px;
-            box-sizing: border-box;
-        }
-
-        textarea {
-            height: 150px;
-        }
-
-        button {
-            margin-top: 20px;
-            background-color: #2e8b57;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 6px;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #3cb371;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -165,18 +38,30 @@
 
         <h2>Equipment Request</h2>
 
-        <form action="mailto:rublesales@iowatelecom.net" method="post" enctype="text/plain">
+        <form action="mailto:rublesales@iowatelecom.net"
+              method="post"
+              enctype="text/plain">
 
             <label>Name:</label>
-            <input type="text" name="Name" required>
+
+            <input type="text"
+                   name="Name"
+                   required>
 
             <label>Email:</label>
-            <input type="email" name="Email" required>
+
+            <input type="email"
+                   name="Email"
+                   required>
 
             <label>What equipment are you interested in?</label>
-            <textarea name="Equipment Request" required></textarea>
 
-            <button type="submit">Send Request</button>
+            <textarea name="Equipment Request"
+                      required></textarea>
+
+            <button type="submit">
+                Send Request
+            </button>
 
         </form>
 
