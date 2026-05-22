@@ -5,18 +5,32 @@
     <title>About - Ruble Sales and Service</title>
 
     <style>
-
         body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
         }
 
         header {
             background-color: #2e8b57;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 220px;
+            height: auto;
+        }
+
+        .header-text {
             color: white;
-            padding: 25px;
-            text-align: center;
+            margin-left: 25px;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-size: 42px;
         }
 
         nav {
@@ -37,6 +51,31 @@
             color: #d1fae5;
         }
 
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3cb371;
+            min-width: 220px;
+            z-index: 1;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .dropdown-content a {
+            display: block;
+            margin: 0;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
         .content-container {
             padding: 40px;
         }
@@ -52,54 +91,64 @@
 
         h2 {
             color: #2e8b57;
+            font-size: 34px;
         }
 
-footer {
-    background-color: #2e8b57;
-    color: white;
-    padding: 40px 20px;
-    margin-top: 50px;
-}
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
 
-.footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: center;
-}
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
 
-.footer-info {
-    flex: 1;
-    min-width: 250px;
-}
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            align-items: center;
+        }
 
-.footer-info h3 {
-    margin-top: 0;
-    font-size: 28px;
-}
+        .footer-info {
+            flex: 1;
+            min-width: 300px;
+        }
 
-.footer-info p {
-    font-size: 18px;
-    line-height: 1.6;
-}
+        .footer-info h3 {
+            margin-top: 0;
+            font-size: 32px;
+        }
 
-.footer-map {
-    flex: 1;
-    min-width: 300px;
-}
+        .footer-info p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 8px 0;
+        }
 
-.footer-map iframe {
-    border-radius: 10px;
-}
+        .footer-map {
+            flex: 1;
+            min-width: 300px;
+        }
 
+        .footer-map iframe {
+            border-radius: 10px;
+        }
     </style>
 </head>
 
 <body>
 
     <header>
-        <h1>Ruble Sales and Service</h1>
+        <img src="images/logo.png" alt="Ruble Sales and Service Logo" class="logo">
+
+        <div class="header-text">
+            <h1>Ruble Sales and Service, LLC</h1>
+        </div>
     </header>
 
     <nav>
@@ -108,6 +157,15 @@ footer {
         <a href="newinventory.html">New Inventory</a>
         <a href="usedinventory.html">Used Inventory</a>
         <a href="contact.html">Contact</a>
+        <a href="equipmentrequest.html">Equipment Request</a>
+
+        <div class="dropdown">
+            <a href="#">More</a>
+
+            <div class="dropdown-content">
+                <a href="agproductlines.html">Ag. Product Lines</a>
+            </div>
+        </div>
     </nav>
 
     <div class="content-container">
@@ -117,45 +175,64 @@ footer {
             <h2>About Us</h2>
 
             <p>
-                Ruble Sales & Service is excited to provide Vermeer sales and service support for your forage equipment needs in Liberty Center, Iowa. Vermeer farm equipment is built to high standards and the customer support at Ruble Sales & Service matches it. We are here to provide expertise throughout the life of your equipment. From helping you select the right hay tools, to providing the parts and service you need, we're here to make sure your operation is set up for success. Visit us today to meet our staff and see our full line of haying equipment.
+                Ruble Sales &amp; Service is excited to provide Vermeer sales and service
+                support for your forage equipment needs in Liberty Center, Iowa.
+                Vermeer farm equipment is built to high standards and the customer
+                support at Ruble Sales &amp; Service matches it.
+            </p>
+
+            <p>
+                We are here to provide expertise throughout the life of your equipment.
+                From helping you select the right hay tools, to providing the parts and
+                service you need, we're here to make sure your operation is set up for success.
+            </p>
+
+            <p>
+                Visit us today to meet our staff and see our full line of haying equipment.
             </p>
 
         </div>
 
     </div>
 
-<footer>
+    <footer>
 
-    <div class="footer-content">
+        <div class="footer-content">
 
-        <div class="footer-info">
+            <div class="footer-info">
 
-            <h3>Ruble Sales and Service</h3>
+                <h3>Contact Information</h3>
 
-            <p>Authorized Vermeer Dealer</p>
+                <p>Phone: 641-466-0507</p>
 
-            <p>Liberty Center, Iowa</p>
+                <p>Email: rublesales@iowatelecom.net</p>
 
-            <p>Call us for equipment availability and pricing.</p>
+                <p>Location: 15979 Tyler Street, Liberty Center, IA 50145</p>
+
+                <p>Hours: 8am - 5pm Monday - Friday</p>
+
+                <p>8am - 12pm Saturday</p>
+
+                <p>Closed Sunday</p>
+
+            </div>
+
+            <div class="footer-map">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.7670609500196!2d-93.50310742316887!3d41.205051771323795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e94b5e54ea5547%3A0x5f5cfa959057cc3f!2sRuble%20Sales%20%26%20Services!5e0!3m2!1sen!2sus!4v1779342555318!5m2!1sen!2sus"
+                    width="100%"
+                    height="250"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+
+            </div>
 
         </div>
 
-        <div class="footer-map">
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.7670609500196!2d-93.50310742316887!3d41.205051771323795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e94b5e54ea5547%3A0x5f5cfa959057cc3f!2sRuble%20Sales%20%26%20Services!5e0!3m2!1sen!2sus!4v1779342555318!5m2!1sen!2sus"
-                width="100%"
-                height="250"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy">
-            </iframe>
-
-        </div>
-
-    </div>
-
-</footer>
+    </footer>
 
 </body>
 

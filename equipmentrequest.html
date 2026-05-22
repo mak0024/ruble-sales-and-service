@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Contact - Ruble Sales and Service</title>
+    <title>Equipment Request - Ruble Sales and Service</title>
 
     <style>
         body {
@@ -78,65 +78,58 @@
 
         .content-container {
             padding: 40px;
-        }
-
-        .section-box {
-            background-color: #f0fff4;
-            border: 2px solid #3cb371;
-            border-radius: 10px;
-            padding: 25px;
-            max-width: 900px;
+            max-width: 700px;
             margin: auto;
         }
 
         h2 {
             color: #2e8b57;
+            text-align: center;
             font-size: 34px;
         }
 
-        .section-box p {
-            font-size: 18px;
-            line-height: 1.8;
+        form {
+            background-color: #f0fff4;
+            border: 2px solid #3cb371;
+            border-radius: 10px;
+            padding: 25px;
         }
 
-        footer {
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #2e8b57;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            margin-top: 20px;
             background-color: #2e8b57;
             color: white;
-            padding: 40px 20px;
-            margin-top: 50px;
-        }
-
-        .footer-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .footer-info {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .footer-info h3 {
-            margin-top: 0;
-            font-size: 32px;
-        }
-
-        .footer-info p {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
             font-size: 18px;
-            line-height: 1.8;
-            margin: 8px 0;
+            font-weight: bold;
+            cursor: pointer;
         }
 
-        .footer-map {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .footer-map iframe {
-            border-radius: 10px;
+        button:hover {
+            background-color: #3cb371;
         }
     </style>
 </head>
@@ -170,64 +163,24 @@
 
     <div class="content-container">
 
-        <div class="section-box">
+        <h2>Equipment Request</h2>
 
-            <h2>Contact Us</h2>
+        <form action="mailto:rublesales@iowatelecom.net" method="post" enctype="text/plain">
 
-            <p><strong>Phone:</strong> 641-466-0507</p>
+            <label>Name:</label>
+            <input type="text" name="Name" required>
 
-            <p><strong>Email:</strong> rublesales@iowatelecom.net</p>
+            <label>Email:</label>
+            <input type="email" name="Email" required>
 
-            <p><strong>Location:</strong> 15979 Tyler Street, Liberty Center, IA 50145</p>
+            <label>What equipment are you interested in?</label>
+            <textarea name="Equipment Request" required></textarea>
 
-            <p><strong>Hours:</strong> 8am - 5pm Monday - Friday</p>
+            <button type="submit">Send Request</button>
 
-            <p><strong>Saturday:</strong> 8am - 12pm</p>
-
-            <p><strong>Sunday:</strong> Closed</p>
-
-        </div>
+        </form>
 
     </div>
-
-    <footer>
-
-        <div class="footer-content">
-
-            <div class="footer-info">
-
-                <h3>Contact Information</h3>
-
-                <p>Phone: 641-466-0507</p>
-
-                <p>Email: rublesales@iowatelecom.net</p>
-
-                <p>Location: 15979 Tyler Street, Liberty Center, IA 50145</p>
-
-                <p>Hours: 8am - 5pm Monday - Friday</p>
-
-                <p>8am - 12pm Saturday</p>
-
-                <p>Closed Sunday</p>
-
-            </div>
-
-            <div class="footer-map">
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.7670609500196!2d-93.50310742316887!3d41.205051771323795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e94b5e54ea5547%3A0x5f5cfa959057cc3f!2sRuble%20Sales%20%26%20Services!5e0!3m2!1sen!2sus!4v1779342555318!5m2!1sen!2sus"
-                    width="100%"
-                    height="250"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy">
-                </iframe>
-
-            </div>
-
-        </div>
-
-    </footer>
 
 </body>
 
